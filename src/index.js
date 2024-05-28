@@ -3,6 +3,8 @@ import { createHomePage } from "./homePage";
 import { createMenuPage } from "./menuPage";
 import { createAboutPage } from "./aboutPage";
 
+const logo = document.querySelector(".logo");
+
 const homeBtn = document.querySelector("#home-btn");
 const aboutBtn = document.querySelector("#about-btn");
 const menuBtn = document.querySelector("#menu-btn");
@@ -13,6 +15,7 @@ function ActivateBtn(pressedBtn) {
   aboutBtn.classList.remove("active-btn");
   menuBtn.classList.remove("active-btn");
 
+  //   activate pressedBtn
   pressedBtn.classList.add("active-btn");
 }
 
@@ -29,4 +32,8 @@ menuBtn.addEventListener("click", function () {
 aboutBtn.addEventListener("click", function () {
   ActivateBtn(aboutBtn);
   createAboutPage();
+});
+
+logo.addEventListener("click", function () {
+  window.location.href = "https://github.com/Zaid0412/restaurant-page";
 });

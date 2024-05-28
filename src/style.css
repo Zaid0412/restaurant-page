@@ -42,6 +42,7 @@ nav {
 
 .logo {
   /* display: inline; */
+  cursor: pointer;
 
   margin-left: -29rem;
   margin-top: 17px;
