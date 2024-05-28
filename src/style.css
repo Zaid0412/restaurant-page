@@ -2,6 +2,8 @@
 
 * {
   font-family: "Outfit", sans-serif;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
 }
 
 body {
@@ -15,7 +17,6 @@ body {
 header {
   display: flex;
   justify-content: center;
-  padding: 2rem;
 }
 
 nav button:nth-of-type(1) {
@@ -23,18 +24,25 @@ nav button:nth-of-type(1) {
 }
 
 nav {
+  padding: 1.5rem;
+  border-radius: 10px;
   display: flex;
   text-align: center;
   justify-content: center;
   gap: 75px;
   height: 125px;
+  width: 100vw;
   /* background-color: #0c0c0c; */
   opacity: 0.9;
   /* box-shadow: rgba(237, 237, 237, 0.56) 0px 22px 70px 4px; */
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px,
+    rgba(204, 219, 232, 0.4) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.3) -3px -3px 6px 1px inset;
 }
 
 .logo {
   /* display: inline; */
+
   margin-left: -29rem;
   margin-top: 17px;
   width: 75px;
@@ -61,7 +69,7 @@ nav button {
   /* display: inline-block; */
 
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0;
   line-height: 1em;
   margin: 0;
@@ -84,6 +92,15 @@ nav button {
   white-space: nowrap;
   box-shadow: rgba(237, 237, 237, 0.19) 0px 10px 20px,
     rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.active-btn {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset,
+    rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(255, 255, 255, 0.2) 0px 16px 16px;
+  background-color: #9c9c9c;
 }
 
 nav button:before {
@@ -153,10 +170,14 @@ nav button span {
   border-bottom: 2px solid #ededed;
 }
 
+.hrs-cnt p {
+  font-weight: 600;
+}
+
 .location-cnt {
   border-radius: 10px;
-  margin-left: -30px;
-  width: 450px;
+  margin-left: -48px;
+  width: 500px;
   height: 150px;
   background-color: rgba(0, 0, 0, 0.55);
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px,
@@ -173,6 +194,10 @@ nav button span {
   width: 190px;
   font-size: 45px;
   border-bottom: 2px solid #ededed;
+}
+
+.location-cnt p {
+  font-weight: 600;
 }
 
 /* Menu Page */
